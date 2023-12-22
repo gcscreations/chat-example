@@ -25,7 +25,7 @@
   <script>
     let counter = 0;
 
-    const socket = io({
+    const socket = io({transports: ['websocket'],
       auth: {
         serverOffset: 0
       },
